@@ -51,8 +51,7 @@ Be sure to `set.seed(445)`.
     
 3. We have seen that as the number of features used in a model increases, the training error will necessarily decrease, but the test error may not. We will explore this with a simulated data set. Run the following code to generate your dataset.
 
-    
-    ```r
+    ```{r}
     p <- 20
     n <- 1000
     

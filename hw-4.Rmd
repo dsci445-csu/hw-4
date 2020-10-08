@@ -1,17 +1,16 @@
-# hw-4
+---
+title: "DSCI445 - Homework 4"
+author: "Your Name"
+date: "Due 10/23/2019 by 4pm"
+output: pdf_document
+---
 
-Homework 4 in DSCI445: Statistical Machine Learning @ CSU
+Be sure to `set.seed(445)` at the beginning of your homework. 
 
-## Assignment
-
-Here is a useful list of functions for the methods in this chapter:
-
-- `regsubsets` in the `leaps` package peforms subset selection methods.
-- `glmnet` in the `glmnet` package performs ridge regression and the lasso.
-- `pcr` in the `pls` package performs principal components regression.
-- `plsr` in the `pls` package performs partial least squares.
-
-Be sure to `set.seed(445)`.
+```{r}
+#reproducibility
+set.seed(445)
+```
 
 1. In this exercise, we will generate simulated data, and then use this data to perform best subset selection.
 
@@ -51,8 +50,7 @@ Be sure to `set.seed(445)`.
     
 3. We have seen that as the number of features used in a model increases, the training error will necessarily decrease, but the test error may not. We will explore this with a simulated data set. Run the following code to generate your dataset.
 
-    
-    ```r
+    ```{r}
     p <- 20
     n <- 1000
     
@@ -80,3 +78,4 @@ Be sure to `set.seed(445)`.
     
     c. Does your chosen model involve all of the features in the data set? Why or why not?
 
+Turn in in a pdf of your homework to canvas using the provided Rmd file as a template. Your Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical.
